@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("/fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("/fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("/fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -487,6 +487,15 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 480px) {
   .timeline:before {
     margin-left: -64px;
+  }
+  .m-9df02822 {
+    --modal-size: 100% !important;
+  }
+  .m-1f958f16 {
+    justify-content:start !important;
+  }
+  .project-pics {
+      height: 300px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1373,6 +1382,10 @@ input[type="text"] {
 
 .source-code {
   cursor: pointer;
+}
+
+.m-9814e45f {
+  background: var(--overlay-bg, rgba(0,0,0,.8)) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

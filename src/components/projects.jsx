@@ -38,11 +38,11 @@ export default function Projects() {
         1: {
             name: "Car internal system",
             pictures: [
-                "/img/car-internal-system/login.png",
-                "/img/car-internal-system/dashboard.png",
-                "/img/car-internal-system/Oueue.png",
-                "/img/car-internal-system/car_managment.png",
-                "/img/car-internal-system/screenshots.png",
+                "../img/car-internal-system/login.png",
+                "../img/car-internal-system/dashboard.png",
+                "../img/car-internal-system/Oueue.png",
+                "../img/car-internal-system/car_managment.png",
+                "../img/car-internal-system/screenshots.png",
             ],
             functionality: [
                 "User authorization",
@@ -57,8 +57,8 @@ export default function Projects() {
         },
         2: {
             name: "React shop site",
-            pictures: ['/img/shisha-shop/home-page.png','/img/shisha-shop/products.png','/img/shisha-shop/product-details.png',
-                    '/img/shisha-shop/contacts.png','/img/shisha-shop/cart.png','/img/shisha-shop/order-done.png',
+            pictures: ['../img/shisha-shop/home-page.png','../img/shisha-shop/products.png','../img/shisha-shop/product-details.png',
+                    '../img/shisha-shop/contacts.png','../img/shisha-shop/cart.png','../img/shisha-shop/order-done.png',
                 ],
             functionality: [
                 "User authorization",
@@ -70,10 +70,10 @@ export default function Projects() {
         3: {
             name: "Rewritten network education site",
             pictures: [
-                '/img/technetuni/login.png','/img/technetuni/register.png','/img/technetuni/home.png',
-                '/img/technetuni/course.png','/img/technetuni/course.png','/img/technetuni/enroll-course.png',
-                '/img/technetuni/calendar.png','/img/technetuni/profile.png','/img/technetuni/news.png',
-                '/img/technetuni/contacts.png',],
+                '../img/technetuni/login.png','../img/technetuni/register.png','../img/technetuni/home.png',
+                '../img/technetuni/course.png','../img/technetuni/course.png','../img/technetuni/enroll-course.png',
+                '../img/technetuni/calendar.png','../img/technetuni/profile.png','../img/technetuni/news.png',
+                '../img/technetuni/contacts.png',],
             functionality: [
                 "User authorization",
                 "Course management",

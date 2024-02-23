@@ -1,3 +1,4 @@
+
 export default function Services() {
     return (
         <div id="fh5co-features" className="animate-box">
@@ -33,7 +34,7 @@ export default function Services() {
                         <div className="col-md-4 text-center">
                             <div className="feature-left">
                                 <span className="icon icon-django">
-                                    <img src="/img/dj.png" alt="" className="django-icon"/>
+                                    <img src="../img/dj.png" alt="" className="django-icon"/>
                                 </span>
                                 <div className="feature-copy">
                                     <h3>Back-End Developent</h3>
