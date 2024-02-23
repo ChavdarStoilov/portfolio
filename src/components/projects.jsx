@@ -31,7 +31,7 @@ export default function Projects() {
 
         setTimeout(() => {
             setLoading(false);
-        }, 2000);
+        }, 500);
     };
 
     const projects = {
@@ -69,7 +69,11 @@ export default function Projects() {
         },
         3: {
             name: "Rewritten network education site",
-            pictures: [],
+            pictures: [
+                '/img/technetuni/login.png','/img/technetuni/register.png','/img/technetuni/home.png',
+                '/img/technetuni/course.png','/img/technetuni/course.png','/img/technetuni/enroll-course.png',
+                '/img/technetuni/calendar.png','/img/technetuni/profile.png','/img/technetuni/news.png',
+                '/img/technetuni/contacts.png',],
             functionality: [
                 "User authorization",
                 "Course management",
