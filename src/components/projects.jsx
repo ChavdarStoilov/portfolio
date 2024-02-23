@@ -53,17 +53,19 @@ export default function Projects() {
                 "Invoice functionality",
                 "History functionality",
             ],
-            source: "https://github.com/",
+            source: "",
         },
         2: {
             name: "React shop site",
-            pictures: [],
+            pictures: ['/img/shisha-shop/home-page.png','/img/shisha-shop/products.png','/img/shisha-shop/product-details.png',
+                    '/img/shisha-shop/contacts.png','/img/shisha-shop/cart.png','/img/shisha-shop/order-done.png',
+                ],
             functionality: [
                 "User authorization",
                 "Cart functionality",
                 "Products functionality",
             ],
-            source: "",
+            source: "https://github.com/ChavdarStoilov/React_Djagno_Dschinni_Project",
         },
         3: {
             name: "Rewritten network education site",
