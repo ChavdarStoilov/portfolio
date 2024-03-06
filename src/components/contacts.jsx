@@ -1,5 +1,6 @@
 import { useDisclosure } from "@mantine/hooks";
 import { LoadingOverlay, Button, Group, Box } from "@mantine/core";
+import * as api from '../api/api.v1'
 
 export default function Contacts() {
     const [visible, { toggle }] = useDisclosure(false);
@@ -7,10 +8,22 @@ export default function Contacts() {
     const formSubmit = (e) => {
         e.preventDefault();
 
-        setTimeout(() => {
+        const data = Object.fromEntries(new FormData(e.target));
+
+        api.sent_email(data)
+        .then((result) => {
+            if (result.status === 200) {
+                
+                e.target.reset()
+            }
+        })
+        .catch((error) => console.log(error))
+        .finally( () =>
             toggle(false)
-        }, 2000)
+        )
+
     };
+
 
     return (
         <div id="fh5co-consult">
@@ -27,6 +40,7 @@ export default function Contacts() {
                         <div className="row form-group">
                             <div className="col-md-12">
                                 <input
+                                    name="fname"
                                     type="text"
                                     id="fname"
                                     className="form-control"
@@ -37,6 +51,7 @@ export default function Contacts() {
                         <div className="row form-group">
                             <div className="col-md-12">
                                 <input
+                                    name="lname"
                                     type="text"
                                     id="lname"
                                     className="form-control"
@@ -48,6 +63,7 @@ export default function Contacts() {
                         <div className="row form-group">
                             <div className="col-md-12">
                                 <input
+                                    name="email"
                                     type="text"
                                     id="email"
                                     className="form-control"
@@ -59,6 +75,7 @@ export default function Contacts() {
                         <div className="row form-group">
                             <div className="col-md-12">
                                 <input
+                                    name="subject"
                                     type="text"
                                     id="subject"
                                     className="form-control"
