@@ -1,26 +1,55 @@
-import { useDisclosure } from "@mantine/hooks";
-import { LoadingOverlay, Button, Group, Box } from "@mantine/core";
+import { useState } from "react";
+import { LoadingOverlay,Box } from "@mantine/core";
+import { notifications } from '@mantine/notifications';
+import * as EmailValidator from 'email-validator';
 import * as api from '../api/api.v1'
 
 export default function Contacts() {
-    const [visible, { toggle }] = useDisclosure(false);
+    const [visible, setVisible] = useState(false);
 
     const formSubmit = (e) => {
         e.preventDefault();
-
         const data = Object.fromEntries(new FormData(e.target));
 
-        api.sent_email(data)
-        .then((result) => {
-            if (result.status === 200) {
-                
-                e.target.reset()
-            }
-        })
-        .catch((error) => console.log(error))
-        .finally( () =>
-            toggle(false)
-        )
+        if (EmailValidator.validate(data.email)) {
+            setVisible(true)
+
+            api.sent_email(data)
+            .then((result) => {
+                if (result.status === 200) {
+                    notifications.show({
+                        title: 'Notification',
+                        message: 'The email was sent successfully.',
+                        autoClose: 4000,
+                        color: 'green',
+                    })
+                    e.target.reset()
+                    setVisible(false)
+
+                }
+                else {
+                    notifications.show({
+                        title: 'Notification',
+                        message: 'The email was sent successfully.',
+                        autoClose: 4000,
+                        color: 'red',
+
+                    })
+                }
+            })
+            .catch((error) => console.log(error))
+        }
+        else {
+            notifications.show({
+                title: 'Notification',
+                message: 'Enter valid email address!',
+                autoClose: 4000,
+                color: 'red',
+
+            })
+            setVisible(false)
+
+        }
 
     };
 
@@ -45,6 +74,7 @@ export default function Contacts() {
                                     id="fname"
                                     className="form-control"
                                     placeholder="Your firstname"
+                                    required
                                 />
                             </div>
                         </div>
@@ -56,6 +86,7 @@ export default function Contacts() {
                                     id="lname"
                                     className="form-control"
                                     placeholder="Your lastname"
+                                    
                                 />
                             </div>
                         </div>
@@ -68,6 +99,8 @@ export default function Contacts() {
                                     id="email"
                                     className="form-control"
                                     placeholder="Your email address"
+                                    required
+
                                 />
                             </div>
                         </div>
@@ -80,6 +113,8 @@ export default function Contacts() {
                                     id="subject"
                                     className="form-control"
                                     placeholder="Your subject of this message"
+                                    required
+
                                 />
                             </div>
                         </div>
@@ -93,6 +128,8 @@ export default function Contacts() {
                                     rows="10"
                                     className="form-control"
                                     placeholder="Say something about us"
+                                    required
+
                                 ></textarea>
                             </div>
                         </div>
@@ -100,7 +137,6 @@ export default function Contacts() {
                         <div className="form-group">
                             <button
                                 className="btn btn-primary"
-                                onClick={toggle}
                             >
                                 Send Message
                             </button>

@@ -7,11 +7,13 @@ import Projects from "./components/projects"
 import Contacts from "./components/contacts"
 import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
+import { Notifications } from '@mantine/notifications';
 
 function App() {
 
   return (
     <MantineProvider>
+      <Notifications/>
       <Header/>
       <About/>
       <Resume/>
