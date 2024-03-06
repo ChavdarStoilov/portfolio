@@ -28,6 +28,19 @@ export default function About() {
                                     stoilov.chavdar@gmail.com
                                 </span>
                             </li>
+                            <li>
+                                <span className="first-block">Own Brand:</span>
+                                <span className="second-block">
+                                    <a href="https://stoilov-solutions.com/">Website</a>
+                                </span>
+                                <span className="second-block">
+                                    <a href="https://www.facebook.com/profile.php?id=61556791982620">Facebook</a>
+                                </span>
+                                <span className="second-block">
+                                    <a href="https://www.instagram.com/stoilovsoftwaresolutions?igsh=c28zZjY1YXZpMTQy">Instagram</a>
+
+                                </span>
+                            </li>
                         </ul>
                     </div>
                     <div className="col-md-8 about-me-desc">
@@ -36,7 +49,7 @@ export default function About() {
                         <p>
                             I am work as Application Administrator at the
                             moment, but my hobby I the web development and I
-                            develop myself in this sphere.
+                            develop myself in this sphere. I also recently created my own brand and provide my services in web development.
                         </p>
                     </div>
                 </div>
