@@ -30,9 +30,9 @@ export default function Resume() {
                                     </div>
                                     <div className="timeline-body">
                                         <p>
-                                            First level support for internal
-                                            system and administration users in
-                                            systems.
+                                            Providing first-level support for
+                                            internal systems and assisting
+                                            system administration users.
                                         </p>
                                     </div>
                                 </div>
@@ -52,8 +52,8 @@ export default function Resume() {
                                     </div>
                                     <div className="timeline-body">
                                         <p>
-                                            First level support on systems for
-                                            monitoring of network devices.
+                                            Providing first-level support for
+                                            systems monitoring network devices.
                                         </p>
                                     </div>
                                 </div>
@@ -81,9 +81,9 @@ export default function Resume() {
                                     </div>
                                     <div className="timeline-body">
                                         <p>
-                                            Studying Python web development.
-                                            Included HTML/CSS and React as a
-                                            front-end.
+                                            Studying Python web development,
+                                            including HTML/CSS, and React as a
+                                            front-end framework.
                                         </p>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@ export default function Resume() {
                                             Network of computer systems
                                         </h3>
                                         <span className="company">
-                                            Jhon Atanasoff - 2010 - 2014
+                                            John Atanasoff - 2010 - 2014
                                         </span>
                                     </div>
                                 </div>

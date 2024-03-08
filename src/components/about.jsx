@@ -31,25 +31,32 @@ export default function About() {
                             <li>
                                 <span className="first-block">Own Brand:</span>
                                 <span className="second-block">
-                                    <a href="https://stoilov-solutions.com/">Website</a>
+                                    <a href="https://stoilov-solutions.com/">
+                                        Website
+                                    </a>
                                 </span>
                                 <span className="second-block">
-                                    <a href="https://www.facebook.com/profile.php?id=61556791982620">Facebook</a>
+                                    <a href="https://www.facebook.com/profile.php?id=61556791982620">
+                                        Facebook
+                                    </a>
                                 </span>
                                 <span className="second-block">
-                                    <a href="https://www.instagram.com/stoilovsoftwaresolutions?igsh=c28zZjY1YXZpMTQy">Instagram</a>
-
+                                    <a href="https://www.instagram.com/stoilovsoftwaresolutions?igsh=c28zZjY1YXZpMTQy">
+                                        Instagram
+                                    </a>
                                 </span>
                             </li>
                         </ul>
                     </div>
                     <div className="col-md-8 about-me-desc">
-                        <h2>Hello There!</h2>
-                        <p>I am Chavdar from Sofia/Bulgaria.</p>
+                        <h2>Hello there!</h2>
+                        <p>I am Chavdar from Sofia, Bulgaria.</p>
                         <p>
-                            I am work as Application Administrator at the
-                            moment, but my hobby I the web development and I
-                            develop myself in this sphere. I also recently created my own brand and provide my services in web development.
+                            I currently work as an Application Administrator,
+                            but my passion lies in web development, and I am
+                            continuously enhancing my skills in this field.
+                            Recently, I established my own brand and offer
+                            services in web development.
                         </p>
                     </div>
                 </div>
