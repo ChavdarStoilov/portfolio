@@ -58,6 +58,13 @@ export default function Skills() {
                         </div>
                         <div className="progress-wrap">
                             <h3>
+                                <span className="name-left">Go</span>
+                                <span className="value-right">40%</span>
+                            </h3>
+                            <Progress color="DodgerBlue" value={40} radius="xl" size="lg" animated/>
+                        </div>
+                        <div className="progress-wrap">
+                            <h3>
                                 <span className="name-left">Docker</span>
                                 <span className="value-right">40%</span>
                             </h3>
